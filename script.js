@@ -1,31 +1,17 @@
 
 
 
-// todo: fix toggle / buttons
-// Access toggle switch HTML element
-var themeSwitcher = document.querySelector("#theme-switcher");
-var container = document.querySelector(".container");
-
-// Set default mode to dark
-var mode = "dark";
-
+// todo: add event listener for starting timer
+// todo: add event listener for buttons
+// todo: tie event listener to correct/incorrect answers
 // Listen for a click event on toggle switch
-themeSwitcher.addEventListener("click", function() {
-  // If mode is dark, apply light background
-  if (mode === "dark") {
-    mode = "light";
-    container.setAttribute("class", "light");
-  }
-  // If mode is light, apply dark background 
-  else {
-    mode = "dark";
-    container.setAttribute("class", "dark");
-  }
-});
+// answer.addEventListener("click", function() {
+    
+// }
 
 
 
-// todo: fix timer code
+// todo: fix timer code to span all pages
 
 // Selects element by class
 var timeEl = document.querySelector(".time");
@@ -51,13 +37,5 @@ function setTime() {
   }, 1000);
 }
 
-// Function to create and append colorsplosion image
-function sendMessage() {
-  timeEl.textContent = " ";
-  var imgEl = document.createElement("img");
-  imgEl.setAttribute("src", "images/image_1.jpg");
-  mainEl.appendChild(imgEl);
-
-}
 
 setTime();
