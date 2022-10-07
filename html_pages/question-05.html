@@ -9,27 +9,35 @@
   <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
+<header>
+<!-- todo: this is the html for the timer -->
+<h4 class="time" style="text-align:right;"></h4>
+<div id="main"></div>
+</header>
+
 <h1 style="text-align:center;">Question 5</h1>
 
 <body>
 
-    <p>A very useful tool used during development and debugging for printing content to the debugger is:</p>
+    <p id="question" class='paragraph'>A very useful tool used during development and debugging for printing content to the debugger is:</p>
 
+    <div id='container' class="container">
     <ol>
-      <button id="correct-btn" class="btn btn-warning">
-        <li class="correct"><a href="completion.html">Correct answer</a></li>
+      <button id="answer-btn" class="answer-correct" onclick="window.location.href = 'completion.html';">
+        <li class="answer-correct">console.log</li>
       </button><br>
-      <button id="incorrect-btn" class="btn btn-warning">
-        <li class="incorrect"><a href="completion.html">Incorrect answer</a></li>
+      <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'completion.html';">
+        <li class="answer-incorrect">terminal / bash</li>
       </button><br>
-      <button id="incorrect-btn" class="btn btn-warning">
-        <li class="incorrect"><a href="completion.html">Incorrect answer</a></li>
+      <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'completion.html';">
+        <li class="answer-incorrect">for loops</li>
       </button><br>
-      <button id="incorrect-btn" class="btn btn-warning">
-        <li class="incorrect"><a href="completion.html">Incorrect answer</a></li>
+      <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'completion.html';">
+        <li class="answer-incorrect">JavaScript</li>
       </button>
       </ol>
-
+    </div>
+    
 <script src= "../script.js"></script>
 </body>
 </html>

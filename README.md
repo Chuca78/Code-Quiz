@@ -40,6 +40,17 @@ If you used any third-party assets that require attribution, list the creators w
 
 If you followed tutorials, include links to those here as well.
 
+
+
+Anna Monus - An Introduction to JavaScript Event Listeners for Web Designers
+https://webdesign.tutsplus.com/tutorials/introduction-to-javascript-event-listeners--cms-35236
+
+<!-- did not use yet -->
+James Q Quick - Build a Quiz App (8) - Save High Scores in Local Storage
+https://www.youtube.com/watch?v=DFhmNLKwwGw
+
+
+
 ## License
 
 The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).

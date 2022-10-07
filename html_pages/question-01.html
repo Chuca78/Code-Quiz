@@ -9,29 +9,37 @@
   <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
+<header>
 
-<h1 style="text-align:center;">Question 1</h1>
+  <!-- todo: this is the html for the timer -->
+  <h4 class="time" style="text-align:right;"></h4>
+  <div id="main"></div>
+</header>
+
+
+<!-- todo: ensure that all classes and ids have a purpose -->
+<h1 id="question_num" style="text-align:center;">Question 1</h1>
 
 <body>
 
-  
-    <p>Commonly used data types DO NOT include:</p>
+    <p id="question" class='paragraph'>Commonly used data types DO NOT include:</p>
 
+    <div id='container' class="container">
     <ol>
-    <button id="correct-btn" class="btn btn-warning">
-      <li class="correct"><a href="question-02.html">Correct answer</a></li>
+    <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'question-02.html';">
+      <li class="answer-incorrect">strings</li>
     </button><br>
-    <button id="incorrect-btn" class="btn btn-warning">
-      <li class="incorrect"><a href="question-02.html">Incorrect answer</a></li>
+    <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'question-02.html';">
+      <li class="answer-incorrect">booleans</li>
     </button><br>
-    <button id="incorrect-btn" class="btn btn-warning">
-      <li class="incorrect"><a href="question-02.html">Incorrect answer</a></li>
+    <button id="answer-btn" class="answer-correct" onclick="window.location.href = 'question-02.html';">
+      <li class="answer-correct">alerts</li>
     </button><br>
-    <button id="incorrect-btn" class="btn btn-warning">
-      <li class="incorrect"><a href="question-02.html">Incorrect answer</a></li>
+    <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'question-02.html';">
+      <li class="answer-incorrect">numbers</li>
     </button>
     </ol>
-
+  </div>
 
 <script src= "../script.js"></script>
 </body>

@@ -9,27 +9,35 @@
   <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
-<h1 style="text-align:center;">Question 2</h1>
+<header>
+<!-- todo: this is the html for the timer -->
+<h4 class="time" style="text-align:right;"></h4>
+<div id="main"></div>
+</header>
+
+
+<h1 id="question_num" style="text-align:center;">Question 2</h1>
 
 <body>
 
-    <p>The condition in an if / else statement is enclosed within _____.</p>
+    <p id="question" class='paragraph'>The condition in an if / else statement is enclosed within _____.</p>
 
+    <div id='container' class="container">
     <ol>
-      <button id="correct-btn" class="btn btn-warning">
-        <li class="correct"><a href="question-03.html">Correct answer</a></li>
+      <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'question-03.html';">
+        <li class="answer-incorrect">quotes</li>
       </button><br>
-      <button id="incorrect-btn" class="btn btn-warning">
-        <li class="incorrect"><a href="question-03.html">Incorrect answer</a></li>
+      <button id="answer-btn" class="answer-correct" onclick="window.location.href = 'question-03.html';">
+        <li class="answer-correct" id="correct">parentheses</li>
       </button><br>
-      <button id="incorrect-btn" class="btn btn-warning">
-        <li class="incorrect"><a href="question-03.html">Incorrect answer</a></li>
+      <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'question-03.html';">
+        <li class="answer-incorrect" id="incorrect">curly brackets</li>
       </button><br>
-      <button id="incorrect-btn" class="btn btn-warning">
-        <li class="incorrect"><a href="question-03.html">Incorrect answer</a></li>
+      <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'question-03.html';">
+        <li class="answer-incorrect" id="incorrect">square brackets</li>
       </button>
       </ol>
-
+    </div>
 
 <script src= "../script.js"></script>
 </body>

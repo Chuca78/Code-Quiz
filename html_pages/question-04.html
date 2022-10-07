@@ -9,26 +9,34 @@
   <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
+<header>
+<!-- todo: this is the html for the timer -->
+<h4 class="time" style="text-align:right;"></h4>
+<div id="main"></div>
+</header>
+
 <h1 style="text-align:center;">Question 4</h1>
 
 <body>
 
-    <p>String values must be enclosed within _____ when being assigned to variables.</p>
+    <p id="question" class='paragraph'>String values must be enclosed within _____ when being assigned to variables.</p>
 
+    <div id='container' class="container">
     <ol>
-      <button id="correct-btn" class="btn btn-warning">
-        <li class="correct"><a href="question-05.html">Correct answer</a></li>
+      <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'question-05.html';">
+        <li class="answer-incorrect">commas</li>
       </button><br>
-      <button id="incorrect-btn" class="btn btn-warning">
-        <li class="incorrect"><a href="question-05.html">Incorrect answer</a></li>
+      <button id="answer-btn" class="answer-correct" onclick="window.location.href = 'question-05.html';">
+        <li class="answer-correct">quotes</li>
       </button><br>
-      <button id="incorrect-btn" class="btn btn-warning">
-        <li class="incorrect"><a href="question-05.html">Incorrect answer</a></li>
+      <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'question-05.html';">
+        <li class="answer-incorrect">curly brackets</li>
       </button><br>
-      <button id="incorrect-btn" class="btn btn-warning">
-        <li class="incorrect"><a href="question-05.html">Incorrect answer</a></li>
+      <button id="answer-btn" class="answer-incorrect" onclick="window.location.href = 'question-05.html';">
+        <li class="answer-incorrect">parentheses</li>
       </button>
       </ol>
+      </div>
 
 <script src= "../script.js"></script>
 </body>
