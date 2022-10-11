@@ -6,36 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Quiz</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+  <body>
     <header>
-
-        <!-- todo: this is the html for the timer -->
-        <!-- todo: fix header so they are both on same line -->
-        <h4 style="text-align:left;"><a href="./html_pages/high-score.html">View High Scores</a></h4>
-        <!-- <h4 class="time" style="text-align:right;"></h4>
-        <div id="main"></div> -->
+      <nav class="navbar navbar-expand-lg navbar-light mb-4">
+        <a class="navbar-brand" href="high-scores.html">View High Scores</a> 
+        <p id="timer">Time Remaining: <span id="time-remaining">60</span></p>
+        <div class="navbar-collapse" id="navbarText"></div>
+        <section class="navbar-text" id='restartButton'>
+        </section>
+      </nav>
     </header>
+    <main>
+      <section id="start" class="quiz-section">
+        <h1>Coding Quiz Challenge</h1>
+        <p class="card-text">
+          Try to answer the following code-related question within the time limit.
+          Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+        </p>
+        <button id="start-button">Start Quiz</button>
+      </section>
+      <section id="quiz-questions" class="hidden quiz-section">
+        
+        <h1 id="question">Quiz Question</h1>
+        <ul id="choices"></ul>
+      </section>
+      <section id="end" class="quiz-section hidden">
+        <h1 id="end-title">All Done!</h1>
+        <p id="score-text">Your Final Score: <span id="score">0</span></p>
+        <form id="submit-score">
+          <label for="initials">Enter initials:</label>
+          <input type="text" id="initials"><br>
+          <button type="submit">Submit</button>
+          <p id="error-message"></p>
+        </form>
+      </section>
+      <div>
+        <p id="correct" class="choice-status hidden"><i class="fas fa-check-circle" aria-hidden="true"></i>Correct</p>
+        <p id="incorrect" class="choice-status hidden"><i class="fas fa-times-circle" aria-hidden="true"></i>Incorrect</p>
+      </div>
+    </main>
 
-  <h1 style="text-align:center;">Coding Quiz Challenge</h1>
-  
-<p>Try to answer the following code related questions within the time limit.<br>
-  Keep in mind that incorrect answers will penalize your time by 10 seconds!
-</p>
-
-<button id="btn-start" class="btn btn-warning" onclick="window.location.href = './html_pages/question-01.html';">
-  <p>Start Quiz</p>
-</button>
-
-
-     
-    </div>
-
-    <footer></footer>
-
-
-  <script src= "script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
