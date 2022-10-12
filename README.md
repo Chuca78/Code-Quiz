@@ -10,7 +10,7 @@ N/A
 
 ## Usage
 
-This website is designed to show my proficiency in building code from scratch to satisfy the user story and acceptance criteria. The code quiz showcased in this website shows my proficiency in timers, event listeners, and CSS styling. The external URL for this code quiz is: https://chuca78.github.io/Mini-project-04/
+This website is designed to show my proficiency in building code from scratch to satisfy the user story and acceptance criteria. The code quiz showcased in this website shows my proficiency in timers, event listeners, and CSS styling. The external URL for this code quiz is: https://chuca78.github.io/Code-Quiz/
 ![chuca78 github io_Mini-project-04_index html](https://user-images.githubusercontent.com/97859682/195187049-1e8ef0dc-3dcb-4b04-ac7e-e7d06aed23c6.png)
 
 ## Credits
