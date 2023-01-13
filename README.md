@@ -1,4 +1,4 @@
-# <Mini Project 04 - Code Quiz>
+# Code Quiz
 
 ## Description
 
